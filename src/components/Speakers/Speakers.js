@@ -2,7 +2,6 @@ import React from 'react';
 import './Speakers.css';
 
 const Speakers = ({ cart }) => {
-
     let totalQuantity = 0;
     let total = 0;
     for (const speaker of cart) {
@@ -15,6 +14,9 @@ const Speakers = ({ cart }) => {
             <h3>List Summary</h3>
             <h5>Numebr of Speakers: {totalQuantity}</h5>
             <p>Total Cost: {total} $</p>
+            <br/>
+            { cart.length !== 0 && <h4>Speaker Lists</h4> }
+            { cart.map( speaker => <p>{speaker.name}</p>) }
         </div>
     );
 };
