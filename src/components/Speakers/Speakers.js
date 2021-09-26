@@ -16,7 +16,7 @@ const Speakers = ({ cart }) => {
             <p>Total Cost: {total} $</p>
             <br/>
             { cart.length !== 0 && <h4>Speaker Lists</h4> }
-            { cart.map( speaker => <p>{speaker.name}</p>) }
+            { cart.map( speaker => <p key={speaker.key}>{speaker.name}</p>) }
         </div>
     );
 };
