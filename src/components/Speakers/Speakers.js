@@ -1,8 +1,8 @@
 import React from 'react';
 import './Speakers.css';
 
-const Speakers = (props) => {
-    const { cart } = props;
+const Speakers = ({ cart }) => {
+    // const { cart } = props;
 
     // const totalReducer = (previous, product) => previous + product.price;
     // const total = cart.reduce(totalReducer, 0);
