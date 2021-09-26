@@ -1,12 +1,12 @@
 import './App.css';
 import Header from './components/Header/Header';
-import Shop from './components/Shop/Shop';
+import ProgrammersHub from './components/ProgrammersHub/ProgrammersHub';
 
 function App() {
   return (
     <div>
-      <Header></Header>
-      <Shop></Shop>
+      <Header/>
+      <ProgrammersHub/>
     </div>
   );
 }

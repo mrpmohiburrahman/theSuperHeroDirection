@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Product from '../Programmer/Programmer';
-import './Shop.css';
+import './ProgrammersHub.css';
 
-const Shop = () => {
+const ProgrammersHub = () => {
     const [programmers, setProgrammers] = useState([]);
     const [cart, setCart] = useState([]);
 
@@ -38,4 +38,4 @@ const Shop = () => {
     );
 };
 
-export default Shop;
+export default ProgrammersHub;
