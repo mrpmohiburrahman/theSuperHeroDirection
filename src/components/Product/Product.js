@@ -5,24 +5,25 @@ import './Product.css';
 
 const Product = (props) => {
     // console.log(props);
-    const { name, img, seller, price, stock } = props.product;
+    const { name, img, salary, speciality, email} = props.product;
 
     return (
         <div className="product">
-            <div>
+            {/* <div>
                 <img src={img} alt="" />
-            </div>
+            </div> */}
             <div>
+                {/* <img src={img} alt="" /> */}
                 <h4 className="product-name">{name}</h4>
-                <p><small>by: {seller}</small></p>
-                <p>Price: {price}</p>
-                <p><small>only {stock} left in stock - order soon</small></p>
+                <p>Salary: {salary}$</p>
+                <p>Speciality: {speciality}</p>
+                <p>Email: {email}</p>
                 <button
                     onClick={() => props.handleAddToCart(props.product)}
                     className="btn-regular"
                 >
                     {/* <FontAwesomeIcon icon={faShoppingCart} /> */}
-                     add to cart</button>
+                     add to List</button>
             </div>
         </div>
     );
