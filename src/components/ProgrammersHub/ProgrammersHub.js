@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Speakers from '../Speakers/Speakers';
-import Product from '../Programmer/Programmer';
+import Programmer from '../Programmer/Programmer';
 import './ProgrammersHub.css';
 
 const ProgrammersHub = () => {
@@ -23,12 +23,12 @@ const ProgrammersHub = () => {
         <div className="shop-container">
             <div className="product-container">
                 {
-                    programmers.map(product => <Product
-                        key={product.key}
-                        product={product}
+                    programmers.map(programmer => <Programmer
+                        key={programmer.key}
+                        programmer={programmer}
                         handleAddToCart={handleAddToCart}
                     >
-                    </Product>)
+                    </Programmer>)
                 }
             </div>
             <div className="cart-container">
