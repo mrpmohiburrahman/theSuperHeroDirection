@@ -13,9 +13,10 @@ const ProgrammersHub = () => {
             .then(data => setProgrammers(data));
     }, []);
 
-    const handleAddToCart = (product) => {
-        const newCart = [...cart, product];
-        setCart(newCart);
+    const handleAddToCart = (programmer) => {
+        const newCart = [...cart, programmer];
+        const uniqueNewCart = [...new Set(newCart)];
+        setCart(uniqueNewCart);
     }
 
 
@@ -27,6 +28,7 @@ const ProgrammersHub = () => {
                         key={programmer.key}
                         programmer={programmer}
                         handleAddToCart={handleAddToCart}
+                        cart={cart}
                     >
                     </Programmer>)
                 }
