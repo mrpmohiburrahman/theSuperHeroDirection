@@ -3,8 +3,8 @@ import React from 'react';
 // import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import './Programmer.css';
 
-const Programmer = (props) => {
-    const { name, img, salary, speciality, email} = props.product;
+const Programmer = ({ product , handleAddToCart }) => {
+    const { name, img, salary, speciality, email} = product;
 
     return (
         <div className="programmer">
@@ -15,7 +15,7 @@ const Programmer = (props) => {
                 <p>Speciality: {speciality}</p>
                 <p>Email: {email}</p>
                 <button
-                    onClick={() => props.handleAddToCart(props.product)}
+                    onClick={() => handleAddToCart(product)}
                     className="btn-regular"
                 >
                     {/* <FontAwesomeIcon icon={faShoppingCart} /> */}
