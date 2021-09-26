@@ -1,7 +1,7 @@
 import React from 'react';
-import './Cart.css';
+import './Speakers.css';
 
-const Cart = (props) => {
+const Speakers = (props) => {
     const { cart } = props;
 
     // const totalReducer = (previous, product) => previous + product.price;
@@ -32,4 +32,4 @@ const Cart = (props) => {
     );
 };
 
-export default Cart;
+export default Speakers;
