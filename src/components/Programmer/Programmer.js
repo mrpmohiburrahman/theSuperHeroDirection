@@ -9,7 +9,7 @@ const Programmer = (props) => {
     return (
         <div className="programmer">
             <div>
-                {/* <img src={img} alt="" /> */}
+                <img className="programmer-image" src={img} alt="" />
                 <h4 className="programmer-name">{name}</h4>
                 <p>Salary: {salary}$</p>
                 <p>Speciality: {speciality}</p>
