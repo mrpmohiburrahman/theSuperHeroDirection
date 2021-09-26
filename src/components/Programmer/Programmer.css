@@ -17,6 +17,10 @@
     height: auto;
 }
 .btn-regular{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
     background-color: goldenrod;
     width: 150px;
     height: 25px;

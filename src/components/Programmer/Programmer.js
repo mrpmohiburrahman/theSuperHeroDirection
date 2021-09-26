@@ -1,6 +1,7 @@
 import React from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faList } from '@fortawesome/free-solid-svg-icons';
+
 import './Programmer.css';
 
 const Programmer = ({ programmer , handleAddToCart }) => {
@@ -14,12 +15,10 @@ const Programmer = ({ programmer , handleAddToCart }) => {
                 <p>Salary: {salary}$</p>
                 <p>Speciality: {speciality}</p>
                 <p>Email: {email}</p>
-                <button
-                    onClick={() => handleAddToCart(programmer)}
-                    className="btn-regular"
-                >
-                    {/* <FontAwesomeIcon icon={faShoppingCart} /> */}
-                     add to List</button>
+                <button className="btn-regular" onClick={() => handleAddToCart(programmer)}>
+                    <p>add to List</p>
+                    <FontAwesomeIcon icon={faList} />
+                </button>
             </div>
         </div>
     );
